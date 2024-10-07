@@ -1,7 +1,7 @@
 :root{
     --fundo: #0b149c;
-    --cartao-frente: #750b0b;
-    --cartao-verso:#000000;
+    --cartão-frente: #750b0b;
+    --cartão-verso:#000000;
     --branco:rgb(255, 255, 255);
     --preto:rgb(0, 0, 2);
     --destaque:#1bc4c4d0; 
@@ -28,21 +28,21 @@ footer{
     gap: 3rem;
 }
 
-.cartao{
+.cartão{
     height:20rem;
     margin: 1rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
-.conteudo-cartao{
-    background-color: var(--cartao-frente);
+.conteudo-cartão{
+    background-color: var(--cartão-frente);
     color: var(--branco);
     text-align: center;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
 }
-.conteudo-cartao h3{
+.conteudo-cartão h3{
     border: 1px solid var(--destaque);
     text-align: left;
     padding: 0.5rem;
@@ -52,7 +52,7 @@ footer{
     backface-visibility:hidden;
 }
 
-.conteudo-cartao p{
+.conteudo-cartão p{
     margin-top: 1rem;
     padding-top: 4rem;
     margin-top: 4rem;
@@ -60,17 +60,17 @@ footer{
 }
 
 
-.resposta-cartao p{
-    color: var(--cartao-verso);
+.resposta-cartão p{
+    color: var(--cartão-verso);
     font-weight: 700;
 }
 
-.cartao.active .conteudo-cartao{
+.cartão.active .conteudo-cartão{
     transform: rotateY(180deg);
 }
 
-.pergunta-cartao,
-.resposta-cartao {
+.pergunta-cartão,
+.resposta-cartão {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
@@ -79,8 +79,8 @@ footer{
 }
 
 
-.resposta-cartao{
+.resposta-cartão{
     transform: rotateY(180deg);
     background-color: var(--destaque);
-    border: 4px solid var(--cartao-verso) ;
+    border: 4px solid var(--cartão-verso) ;
 }
